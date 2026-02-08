@@ -82,8 +82,8 @@ input:focus {
 .pokeNumber {
   position: absolute;
   top: 35.1%;
-  left: 55.1%;
-  width: 16.1%;
+  left: 55%;
+  width: 16.3%;
   height: 6.4%;
   font-size: clamp(20px, 2vw, 25px);
   text-align: center;
@@ -99,7 +99,7 @@ input:focus {
   position: absolute;
   top: 42%;
   left: 55%;
-  width: 16.2%;
+  width: 16.3%;
   height: 5.5%;
 
   display: flex;
