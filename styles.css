@@ -87,8 +87,10 @@ input:focus {
   height: 6.4%;
   font-size: clamp(20px, 2vw, 25px);
   text-align: center;
+  border: 2px solid black;
+  border-radius: 4px;
   color: rgb(174, 215, 86);
-  background: rgb(27, 34, 45);
+  background: rgb(43, 58, 82);
   pointer-events: none;
   line-height: 150%;
 }
@@ -102,13 +104,14 @@ input:focus {
   font-size: clamp(10px, 2vw, 13px);
   text-align: center;
   color: rgb(174, 215, 86);
-  background: rgb(27, 34, 45);
+  background: rgb(43, 58, 82);
   pointer-events: none;
   line-height: 150%;
   border-radius:4px;
   word-break: break-all;
   pointer-events: none;
   line-height: 150%;
-  border-radius:9px;
+  border-radius:4px;
+  border: 2px solid black;
   word-break: break-all;
 }
