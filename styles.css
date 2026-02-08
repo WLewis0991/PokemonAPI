@@ -1,5 +1,3 @@
-/* Style sheet */
-
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 /* ===== RESET ===== */
@@ -26,18 +24,18 @@ body {
 /* ===== RESPONSIVE POKEDEX ===== */
 .app {
   position: relative;
-  width: min(100vw, 1200px);
+  width: min(150vw, 1200px);
   aspect-ratio: 3 / 2; /* matches 1200x800 */
-  background: url("imgs/pokedex2.png") no-repeat center / contain;
+  background: url("imgs/background2.png") no-repeat center / contain;
 }
 
 /* ===== MAIN SCREEN IMAGE ===== */
 .image {
   position: absolute;
-  top: 27.5%;
-  left: 39.6%;
-  width: 24%;
-  height: 24%;
+  top: 39.5%;
+  left: 31.7%;
+  width: 16.1%;
+  height: 15.6%;
   image-rendering: pixelated;
   background-color: #05000000;
 }
@@ -45,84 +43,72 @@ body {
 /* ===== SEARCH INPUT ===== */
 input {
   position: absolute;
-  top: 56.8%;
-  left: 38.3%;
-  width: 16.7%;
-  height: 4.9%;
-  font-size: clamp(10px, 1vw, 13px);
+  top: 84.8%;
+  left: 25.7%;
+  width: 50.7%;
+  height: 9.9%;
+  font-size: clamp(15px, 1vw, 15px);
   border-radius: 5px;
   border: none;
   text-align: center;
   background-color: rgb(213, 225, 164);
-  color: rgb(23, 23, 23);
+  color: rgb(10, 10, 10);
+
 }
 
 input:focus {
   outline: none;
 }
 
-/* ===== SEARCH BUTTON ===== */
-button {
-  position: absolute;
-  top: 56.6%;
-  left: 55.4%;
-  width: 10%;
-  height: 5.4%;
-  font-size: clamp(10px, 1vw, 13px);
-  border-radius: 7px;
-  border: none;
-  background: rgba(213, 225, 164, 0);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: rgba(0, 0, 0, 0.12);
-}
-
-button:active {
-  box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.3);
-}
-
 /* ===== OUTPUT / ERROR DISPLAY ===== */
 .output {
   position: absolute;
-  top: 76.1%;
-  left: 50%;
+  top: 15.1%;
+  left: 35.3%;
   width: 29%;
   height: 7.2%;
-  font-size: clamp(20px, 2vw, 35px);
+  font-size: clamp(25px, 2vw, 30px);
   text-align: center;
-  color: rgb(174, 215, 86);
+  color: rgb(0, 0, 0);
   background: rgba(0, 0, 0, 0);
   pointer-events: none;
+    text-shadow:
+    -1px -1px 0 rgb(255, 255, 255), /* Top-left shadow */
+     1px -1px 0 rgb(255, 255, 255), /* Top-right shadow */
+    -1px  1px 0 rgb(255, 255, 255), /* Bottom-left shadow */
+     1px  1px 0 rgb(255, 255, 255); /* Bottom-right shadow */
 }
 
 .pokeNumber {
   position: absolute;
-  top: 27.1%;
-  left: 70%;
-  width: 10%;
-  height: 7.2%;
+  top: 35.1%;
+  left: 55.1%;
+  width: 16.1%;
+  height: 6.4%;
   font-size: clamp(20px, 2vw, 25px);
   text-align: center;
   color: rgb(174, 215, 86);
-  background: rgba(0, 0, 0, 0);
+  background: rgb(27, 34, 45);
   pointer-events: none;
   line-height: 150%;
 }
 
 .type {
   position: absolute;
-  top: 43.1%;
-  left: 69.7%;
-  width: 10%;
-  height: 7.2%;
-  font-size: clamp(15px, 2vw, 19px);
+  top: 42%;
+  left: 55%;
+  width: 16.2%;
+  height: 5.5%;
+  font-size: clamp(10px, 2vw, 13px);
   text-align: center;
   color: rgb(174, 215, 86);
-  background: rgba(0, 0, 0, 0);
+  background: rgb(27, 34, 45);
   pointer-events: none;
   line-height: 150%;
+  border-radius:4px;
+  word-break: break-all;
+  pointer-events: none;
+  line-height: 150%;
+  border-radius:9px;
   word-break: break-all;
 }
